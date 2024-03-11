@@ -21,7 +21,7 @@ todo
   spack env activate neko
   ```
 - Add Packages to the Environment
-  - Edit `spack.yaml` from `spack/var/spack/environments/neko`
+    Edit `spack.yaml` from `spack/var/spack/environments/neko`
     ```bash
     cd var/spack/environments/neko
     vim spack.yaml
@@ -58,10 +58,10 @@ todo
     ```bash
     spack add cuda@11.1.1
     ```
-  Finally, install all packages in the environment
-    ```bash
-    spack install --overwrite
-    ```
+    Finally, install all packages in the environment
+      ```bash
+      spack install --overwrite
+      ```
 
 
 # Conda
