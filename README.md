@@ -59,9 +59,9 @@ todo
     spack add cuda@11.1.1
     ```
     Finally, install all packages in the environment
-      ```
-      spack install --overwrite
-      ```
+    ```bash
+    spack install --overwrite
+    ```
 
 
 # Conda
