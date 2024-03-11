@@ -63,6 +63,8 @@ todo
     spack install --overwrite
     ```
 
+  More in [Reference](https://chtc.cs.wisc.edu/uw-research-computing/hpc-spack-install)
+
 
 # Conda
 ## Installation
