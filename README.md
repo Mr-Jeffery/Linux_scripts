@@ -59,7 +59,7 @@ todo
     spack add cuda@11.1.1
     ```
     Finally, install all packages in the environment
-      ```bash
+      ```
       spack install --overwrite
       ```
 
