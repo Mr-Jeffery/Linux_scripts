@@ -4,9 +4,9 @@
 git clone https://github.com/spack/spack.git
 cd spack
 git checkout releases/latest
-source share/spack/setup-env.sh
+source ./share/spack/setup-env.sh
 ```
-Please add the last command to `.bashrc` to start spack by default.
+Please add the last command to `.bashrc` with absolute path to start spack by default.
 ## Install Packages
 todo
 ## Compiler
