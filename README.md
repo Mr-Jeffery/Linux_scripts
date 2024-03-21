@@ -30,29 +30,29 @@ todo
     ```
     And modify the file to add the package you need.
     ```
-  spack:
-    specs:
-    - zlib
-    - binutils
-    - cuda@11.8
-    - numactl
-    - xz
-    - libxml2
-    - libpciaccess
-    - hwloc
-    - libevent
-    - check
-    - gdrcopy
-    - ucx
-    - openmpi+cuda
-    - openblas
-    - pmix
-    - fftw
-    - scalapack
-    - libfabric
-    view: true
-    concretizer:
-      unify: true
+    spack:
+      specs:
+      - zlib
+      - binutils
+      - cuda@11.8
+      - numactl
+      - xz
+      - libxml2
+      - libpciaccess
+      - hwloc
+      - libevent
+      - check
+      - gdrcopy
+      - ucx
+      - openmpi+cuda
+      - openblas
+      - pmix
+      - fftw
+      - scalapack
+      - libfabric
+      view: true
+      concretizer:
+        unify: true
     ```
     Or you can just type
     ```bash
