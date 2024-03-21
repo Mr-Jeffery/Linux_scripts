@@ -53,10 +53,10 @@ todo
     view: true
     concretizer:
       unify: true
-      ```
+    ```
     Or you can just type
     ```bash
-    spack add cuda@11.1.1
+    spack add cuda@11.8
     ```
     Concretize the packages:
     ```bash
