@@ -76,6 +76,23 @@ spack load cuda@11.8 # load corresponding cuda
 
   More in [Reference](https://chtc.cs.wisc.edu/uw-research-computing/hpc-spack-install)
 
+## yaml Setting
+By adding a `packages.yaml` to the `.spack` folder, you can change the default compiler and use external cuda to build openmpi.
+
+- The `+cuda` is used to compile openmpi with cuda support
+- `%` means to specify the compiler used so that packages match with each others
+```
+packages:
+  all:
+    compiler: [gcc@12.3.0]
+  openmpi:
+    variants: +cuda
+  cuda:
+    externals:
+    - spec: cuda@11.8%gcc@12.3.0
+      prefix: /usr/local/cuda/
+    buildable: false
+```
 
 # Conda
 ## Installation
@@ -87,7 +104,7 @@ Terminal needs to be restarted.
 
 ## Create Environment
 ```bash
-conda create -n my_env ## or any other names
+conda create -n my_env python=3.11 # or any other environment names and python
 conda activate my_env
-conda install python=3.11 
+conda install numpy
 ```
