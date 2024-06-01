@@ -17,9 +17,10 @@ todo
   spack compiler add /jet/packages/spack/opt/spack/linux-centos8-zen/gcc-8.3.1/gcc-10.2.0-tfzxq7udz2a53dmujvasy4uz33t27iwv ## or the location of any other compilers
   ```
 ## Common Commands
+The `-j 32` flag in `spack install` means to `make` with 32 jobs, which will reduce installation time
 ```bash
 spack info cuda # find available version of cuda
-spack install cuda@11.8 # install specified version of cuda
+spack install -j 32 cuda@11.8 # install specified version of cuda
 spack load cuda@11.8 # load corresponding cuda
 ```
 ## Environment
